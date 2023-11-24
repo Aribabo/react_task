@@ -6,6 +6,7 @@ import { useAuth } from './context/AuthContext';
 
 // mvc 패턴처럼 화면과 로직을 분리
 // jsx는 화면을 그리는 쪽
+// html안에 자바를 쓰고싶을때는 {}를 사용
 
 function App({ tweetService }) {
   const history = useHistory();

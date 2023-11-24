@@ -30,7 +30,8 @@ class Socket {
 let socket;
 export function initSocket(server){
     if(!socket){
-        socket = new Socket()
+        socket = new Socket(server)
+
     }
 }
 export function getSocketIo(){
