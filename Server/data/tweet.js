@@ -15,7 +15,7 @@ const Tweet = Mongoose.model('Tweet', tweetSchema);
 export async function getAll() {
     return Tweet.find().sort( {createdAt: -1});
 }
-export async function getAllByUsername() {
+export async function getAllByUsername(username) {
     return Tweet.find({username}).sort( {createdAt: -1});
 }
 export async function getById(id) {

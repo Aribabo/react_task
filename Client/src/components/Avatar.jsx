@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 
+// 사진이 없으면 이름의 첫글자 반환해서 표시
 const Avatar = memo(({ url, name }) => (
   <div>
     {!!url ? (
